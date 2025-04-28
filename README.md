@@ -61,9 +61,46 @@ Write a C program to read A values and check whether A is positive number or not
 6.End the program.
 
 # PROGRAM:
+```
+# include <stdio.h>
+int main()
+{
+    int day;
+    scanf("%d", &day);
+    switch(day)
+    {
+        case 1:
+        printf("Sunday\n");
+        break;
+        case 2:
+        printf("Monday\n");
+        break;
+        case 3:
+        printf("Tuesday\n");
+        break;
+        case 4:
+        printf("Wednesday\n");
+        break;
+        case 5:
+        printf("Friday\n");
+        break;
+        case 6:
+        printf("Saturday\n");
+        break;
+        case 7:
+        printf("Thursday\n");
+        break;
+        default:
+        printf("invalid number.\n");
+    }
+    return 0;
+}
+```
+
 
 # OUTPUT:
-
+12	Invalid Number
+6	Saturday
 
 
 
@@ -95,8 +132,20 @@ Write a program to find minimum between two fraction numbers using conditional o
 7.	Print the minimum value.
 
 ## PROGRAM:
-
+```
+# include <stdio.h>
+int main()
+{
+    int num1, num2, min;
+    scanf("%d %d", &num1, &num2);
+    min = (num1< num2) ? num1 : num2;
+    printf("Minimum between %d and %d is %d\n",num1, num2, min);
+    return 0;
+}
+```
 ## OUTPUT:
+500 300		Minimum  between
+		300 and 500 is 300
 
 
 
@@ -126,8 +175,23 @@ Write a C program to check whether the input value is equal to 1 using simple if
 6.	End the program.
 
 ## PROGRAM:
+```
+# include <stdio.h>
+int main()
+{
+    float temperature;
+    scanf("%f",&temperature);
+    if (temperature > 100)
+    {
+        printf("Has fever\n");
+    }
+    return 0;
+}
+```
 
 ## OUTPUT:
+95		
+102	Has fever
 
 
 
@@ -162,8 +226,63 @@ c.	Else if percentage >= 36: Print “Division = Pass”
 9.	Else: Print “Division = Fail”
 10.	End
 ## PROGRAM:
+```
+#include <stdio.h>
+
+int main() {
+    int marks1, marks2, marks3, marks4, marks5, total;
+    float percentage;
+
+    // Input marks for five subjects
+    printf("Enter marks for five subjects: \n");
+    printf("Subject 1: ");
+    scanf("%d", &marks1);
+    printf("Subject 2: ");
+    scanf("%d", &marks2);
+    printf("Subject 3: ");
+    scanf("%d", &marks3);
+    printf("Subject 4: ");
+    scanf("%d", &marks4);
+    printf("Subject 5: ");
+    scanf("%d", &marks5);
+
+    // Calculate Total
+    total = marks1 + marks2 + marks3 + marks4 + marks5;
+
+    // Calculate Percentage
+    percentage = (float)total / 5;  // Assuming 5 subjects
+
+    // Print Total and Percentage
+    printf("Total Marks: %d\n", total);
+    printf("Percentage: %.2f%%\n", percentage);
+
+    // Conditional statements to determine Division
+    if (percentage >= 60) {
+        printf("Division: First Division\n");
+    } else if (percentage >= 50) {
+        printf("Division: Second Division\n");
+    } else if (percentage >= 40) {
+        printf("Division: Third Division\n");
+    } else {
+        printf("Division: Fail\n");
+    }
+
+    return 0;
+}
+```
+
 
 ## OUTPUT:
+Enter marks for five subjects: 
+Subject 1: 80
+Subject 2: 75
+Subject 3: 90
+Subject 4: 85
+Subject 5: 70
+Total Marks: 400
+Percentage: 80.00%
+Division: First Division
+
 
 ## RESULT:
 The program successfully takes three subject marks, calculates the total and percentage, and correctly determines the division based on predefined grading logic.
