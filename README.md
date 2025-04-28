@@ -2,14 +2,13 @@
 # EX-01-Datatypes-Operators
 ## AIM:
 Write a C program to read 3 characters one by one and print the characters in a reverse order.
-# include <stdio.h>
-
 ## ALGORITHM:
 1.	Declare three character variables to store the input characters.
 2.	Use the scanf function to read the characters one by one from the user.
 3.	Print the characters in reverse order using the printf function.
 4.	End the program.
 ## PROGRAM:
+```
 # include <stdio.h>
 int main()
 {
@@ -24,7 +23,7 @@ int main()
     
     return 0;
 }
-...
+```
 
 ## OUTPUT:
 	Sum is:90
