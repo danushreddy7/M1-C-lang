@@ -273,6 +273,7 @@ int main() {
 
 
 ## OUTPUT:
+```
 Enter marks for five subjects: 
 Subject 1: 80
 Subject 2: 75
@@ -282,7 +283,7 @@ Subject 5: 70
 Total Marks: 400
 Percentage: 80.00%
 Division: First Division
-
+```
 
 ## RESULT:
 The program successfully takes three subject marks, calculates the total and percentage, and correctly determines the division based on predefined grading logic.
